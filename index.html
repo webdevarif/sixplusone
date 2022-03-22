@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixPlusOne</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- JS Plugins -->
+    <script src="assets/js/swiper-bundle-8.6.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+<body>
+    <!--**|| 01 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__img">
+            <img src="assets/images/logo.gif" alt="">
+        </div>
+    </div>
+
+    <!--**|| 02 Full Menu -->
+    <section id="fullMenu" class="fullmenu bg-danger text-white">
+        <div class="fullmenu__header">
+            <a href="/" class="fullmenu__logo">
+                <img src="assets/images/white_logo.png" alt="">
+            </a>
+            <span menuToggler class="fullmenu__exit">Exit</span>
+        </div>
+
+        <div class="fullmenu__navbar text-center text-start">
+            <div class="navbar-area">
+                <h1 class="mb-4 mb-lg-6">Menu</h1>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="menuList">
+                            <ul class="list-unstyled fullmenu__nav-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">People</a></li>
+                                <li><a href="/">Community</a></li>
+                                <li><a href="/">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="fullmenu__navbar-desc d-none d-xl-block">
+                           <article>
+                             <p>We recommend you try the work section off our menu. It’s delicious.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullmenu__getintouch py-5 d-flex align-items-center">
+            <div class="getintouch-form">
+                <h1>Get In Touch</h1>
+                <p>You can use the form below or email info@sixplusone.com</p>
+                <form class="mb-4">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea name="" id="" class="form-control resize-none" cols="30" rows="3" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-end">
+                        <button class="btn btn-light text-danger">
+                            <span class="fas fa-paper-plane fs-5 me-2"></span>
+                            <span>SEND</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Newsletter -->
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="fs-xl" for="label--newsletter">Sign up for our Newsletter</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                            <span class="fas fa-paper-plane position-absolute end-0 me-4 top-50 translate-middle-y fs-2xl"></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-area text-center text-start">
+                    <div class="row g-2 g-lg-4">
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">New business</h5>
+                                <p><a class="text-white" href="mailto:newbiz@sixplusone.com">newbiz@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">CAREERS</h5>
+                                <p><a class="text-white" href="mailto:careers@sixplusone.com">careers@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">GIVE US A CALL</h5>
+                                <p>646.389.4623</p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">PUBLIC RELATIONS</h5>
+                                <p><a class="text-white" href="mailto:pr@sixplusone.com">pr@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="fullmenu__social d-flex align-items-center justify-content-center">
+            <div class="social-list">
+                <ul class="list-unstyled mb-0 list-social">
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!--**|| 02 Full Menu -->
+    <header class="header bg-primary d-flex justify-content-between align-items-center">
+        <div class="header__logo">
+            <img src="assets/images/white_logo.png" alt="">
+        </div>
+        <div class="header__menuToggle">
+            <span menuToggler class="text-uppercase fs-2xl">Menu</span>
+        </div>
+    </header>
+    
+    <!-- Plugin Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

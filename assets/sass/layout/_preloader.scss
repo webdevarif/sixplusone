@@ -1,0 +1,15 @@
+.preloader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $danger;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: var(--preloader-left, 0);
+
+    &__img{
+        max-width: 380px;
+    }
+}

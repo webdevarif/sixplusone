@@ -1,0 +1,15 @@
+@each $font, $family in $ff-list {
+    .ff-#{$font}{
+        font-family: $family !important;
+    }
+}
+
+@each $font, $size in $sizes-list {
+    .fs-#{$font}{
+        font-size: #{$size} !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, label{
+    margin-bottom: rem(15px);
+}
