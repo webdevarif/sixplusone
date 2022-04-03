@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixPlusOne</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    <!-- Custom Plugins -->    
+    <script src="assets/js/avatar-solution.js"></script>
+    <!-- JS Plugins -->    
+    <script src="assets/js/swiper-bundle-8.6.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+<body>
+    <!--**|| 01 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__img">
+            <img src="assets/images/logo.gif" alt="">
+        </div>
+    </div>
+
+    <!--**|| 02 Full Menu -->
+    <section id="fullMenu" class="fullmenu bg-danger text-white">
+        <div class="fullmenu__header">
+            <a href="/" class="fullmenu__logo">
+                <img src="assets/images/logo-white.png" alt="">
+            </a>
+            <span menuToggler class="fullmenu__exit">Exit</span>
+        </div>
+
+        <div class="fullmenu__navbar text-center text-start">
+            <div class="navbar-area">
+                <h1 class="mb-4 mb-lg-6">Menu</h1>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="menuList">
+                            <ul class="list-unstyled fullmenu__nav-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">People</a></li>
+                                <li><a href="/">Community</a></li>
+                                <li><a href="/">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="fullmenu__navbar-desc d-none d-xl-block">
+                           <article>
+                             <p>We recommend you try the work section off our menu. It’s delicious.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullmenu__getintouch py-5 d-flex align-items-center">
+            <div class="getintouch-form">
+                <h1>Get In Touch</h1>
+                <p>You can use the form below or email info@sixplusone.com</p>
+                <form class="mb-4">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea name="" id="" class="form-control resize-none" cols="30" rows="3" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-end">
+                        <button class="btn btn-light text-danger">
+                            <span class="fas fa-paper-plane fs-5 me-2"></span>
+                            <span>SEND</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Newsletter -->
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="fs-xl" for="label--newsletter">Sign up for our Newsletter</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                            <span class="fas fa-paper-plane position-absolute end-0 me-4 top-50 translate-middle-y fs-2xl"></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-area text-center text-start">
+                    <div class="row g-2 g-lg-4">
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">New business</h5>
+                                <p><a class="text-white" href="mailto:newbiz@sixplusone.com">newbiz@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">CAREERS</h5>
+                                <p><a class="text-white" href="mailto:careers@sixplusone.com">careers@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">GIVE US A CALL</h5>
+                                <p>646.389.4623</p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">PUBLIC RELATIONS</h5>
+                                <p><a class="text-white" href="mailto:pr@sixplusone.com">pr@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="fullmenu__social d-flex align-items-center justify-content-center">
+            <div class="social-list">
+                <ul class="list-unstyled mb-0 list-social">
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--**|| 03 Header Area -->
+    <header class="header header-light" id="header-sticky">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo-white.png" class="logo-white" alt="">
+            <img src="assets/images/logo-dark.png" class="logo-dark" alt="">
+        </a>
+        <div class="header__toggler">
+            <span menuToggler>Menu</span>
+        </div>
+    </header>
+    
+
+    <main class="main-wrapper">
+
+        <!--**|| 04 Hero Area -->
+        <section class="hero-area hero-topbar bg-cover bg-center" style="--hero-top-bar-padding: 25% 0 3em;background-image: url(assets/images/top-people.jpg);" data-style="light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-article text-center text-white">
+                            <h6 data-aos="fade-up" data-aos-delay="100">OUR PEOPLE</h6>
+                            <h3 data-aos="fade-up" data-aos-delay="200">THOSE WHO FOLLOW THE CROWD GET LOST IN IT</h3>
+                            <p data-aos="fade-up" data-aos-delay="300">Our team is always looking to grow, get out of their comfort zone, and take charge. <br>
+                                It's this type of attitude that helps accelerate our client's business. Meet our growing team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 02 People Area -->
+        <section class="people-section-area py-5 py-lg-7" data-style="dark">
+            <div class="container-fluid gx-0">
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/eric.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">ERIC ROJAS</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">CCO/FOUNDER</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Eric Rojas is dedicated to building relationships with brands and their consumers that goes beyond the purchase of a product.</p>
+                                    <p>Eric has won numerous creative awards and has been featured in Creativity, AdWeek, Billboard —and Forbes interviewed him for “The Power of Purpose” article series that highlights how purpose drives business and social impact.</p>
+                                    <p>As a former Creative Director for Havas Worldwide, Ammirati and Deutsch his clients have included; Ikea, Tylenol, Coca-Cola, Starwood Hotels, Reckitt Benckiser, Liberty Mutual, Charles Schwab, New York Life, Prudential, Revlon, Olympus and more. He’s been challenging advertising industry conventions throughout his career and has helped launch some of the biggest brands in their categories, such as vitaminwater, smartwater and Pirate’s Booty.</p>
+                                    <p>In 2018, Eric helped create a non-profit organization called “For The Greater Hood” which helps to bring warmth and human connection to the most marginalized group in the NYC community: the homeless.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/emily.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">EMILY MARTIN</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">ACCOUNT LEAD</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Emily hopes to make it big on Shark Tank one day. She's seen every episode, but she isn't a dreamer. Emily is a down-to-earth realist that wants to get things done as efficiently as possible. By building relationships with clients and business partners alike, she strategically oversees the work and sets the stage for creativity to thrive. Creative brainstorms are both exhilarating and taxing for her, because her brain is like a browser with 20 open tabs testing the practicality of it all. We'd call her a shark, but she's too sweet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/alla.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">ALLA GONOPOLSKY</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">STRATEGY DIRECTOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="600" class="section-content fs-lg-xxl">
+                                    <p>Like anyone with the word "strategy" in their title, Alla can often be found explaining Venn diagrams to sound smart in meetings. For the last 12 years, she has strategized on big global brands and scrappy upstarts across creative shops in New York and San Francisco (i.e. Volvo, MINI, Lysol, Keurig, and Samsung) Otherwise, she's wherever her passport hasn't been stamped yet, playing her bright green ukulele and doing yoga in airports.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/richard.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">RICHARD NOTARIANNI</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">PLANNING DIRECTOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>A pioneer in art and science of integrated communications strategy and operations, Richard has designed and implemented breakthrough efforts from TD Ameritrade, Schwab, Dos Equis, Jaguar, Liberty Mutual, Nestle, Exxon Mobil, Merck, Lockheed Martin (Space Day), and Hershey’s to name just a few.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/josh.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">JOSHUA BULL</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">SENIOR ART DIRECTOR + DESIGN LEAD</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Joshua believes design is far too important to take lightly. Employing a thoughtful approach, he’s developed a reputation for consistently creating work that cuts through the clutter. It’s also earned him the rarefied dual status as a verb. He’s frequently asked to ‘Josh-ify’ things to make them beautiful.</p>
+                                    <p>Joshua also enjoys breaking things. Or at least he did when he was a kid. He spent his teenage years breaking down computers and rebuilding them because curiosity always drove him to ask, 'how does this work?'</p>
+                                    <p>And sure, he got into trouble, but he also learned a lot about the power of asking 'why', and how passion and persistence can nearly always yield awesome results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/emma.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">EMMA WOOD</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">SENIOR ART DIRECTOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Emma is an Art Director by trade, and a Real Housewives fan by choice. A lover of bold fonts, muted colors, a well designed menu (that includes burrata and/or mezcal), and shoes. She’s on an endless quest to find her next creative outlet, and will pretty much try anything on her way — as long as there is pizza involved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/frankie.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">FRANKIE QUINONES</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">DIGITAL LEAD</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>At Six+One, Frankie leads the charge with everything digital. From strategy development and multi-channel campaign creation, to overall digital marketing and analytics, he specializes in successfully navigating organizations through the digital transformation landscape, as well as increasing ROI within our agency roster. He prefers a challenging game of chess over an easy foe, and in similar fashion, loves projects that require him to grow and dig deep. He believes you can’t excel in leadership without first excelling as a servant. And as far as Frankie is concerned, loving God, loving people, and training up the next generation are what it’s all about.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/Deirdre.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">DEIRDRE MAHER</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">ACCOUNT EXECUTIVE</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Deirdre is a boundless explorer and perpetual dreamer. In a past life she may have been a creative, but in this one she’s a relationship enthusiast. Deirdre enjoys cultivating new clients, as well as nurturing long lasting partnerships. In her spare time, she finds inspiration in music, color, architecture and design. Oh, and she is a plant fanatic who gets much enjoyment in propagating.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/rafael.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">RAFAEL VALENTE</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">DESIGN DIRECTOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Rafael is passionate about people, and endlessly motivated by results. Design, photography, typography, and art is how he expresses himself.</p>
+                                    <p>Rafael's enthusiasm and energy is unmatched, which comes from his core desire to take on new challenges, collaborate, and continue to grow. But, outside of these walls, it's caused him to get into a bit of trouble. Whether he's lifting too much, almost drowning while surfing in Costa Rica, or just dancing to Flo Rida's "Low" in da' club, Rafael has one speed... All In!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/dior.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">DIOR RODRIGUEZ</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">SENIOR EDITOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Dior is a storyteller. Technically speaking, she is an editor, and a director. But those are just the means by which she tells her stories. The most important tools at her disposal are her eyes, ears, and her heart. It’s how she listens to the world as she travels the continents, talking to strangers, and collecting stories. Dior spends practically all her free time editing. And she just discovered a love of the sauna. If she can figure out a way to edit in the sauna, she'll be the happiest woman in the world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/brandon.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">BRANDON ARROYO</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">JUNIOR EDITOR</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>As an editor at Six+One, Brandon brings creativity and energy to the projects thrown his way. With a focus on putting out work that imbues change, he finds that Six+One is right up his alley. When Brandon isn't editing, he's a passionate Writer/Director/Producer working on his next project within magical realism, docudramas, or animations. His interest as a storyteller stems from topics such as unity, family, and identity. He's a recent alumni of the National Association of Latino Independent Producers (NALIP), and when he isn't working on films or practicing Martial Arts, he's probably rereading Harry Potter or rewatching Voltron.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/adam.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">ADAM MANIA</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">COPYWRITER</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Adam used to swim in briefs (he’s a former Olympic swimmer). Now, he's commanded by them. When he's not shredding air guitar in the hallways at work, he's crafting copy and using words like ‘bedlam’ and ‘scoundrel’. Feared by kebabs everywhere, if you're chargrilled and on a stick, you're in his crosshairs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row mb-2 mb-md-6 g-0">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/oscar.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="top">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">OSCAR CALDERA</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">DEVELOPER</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Oscar's vast experience within every facet of the digital world makes him a force of digital nature. But it’s his Chilean spirit that makes him a joy to have around the office. Whether he's QA’ing a new site, or helping develop the next great platform, his positive attitude is contagious. We’ve all come down with a case of it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single People -->
+                <div class="row g-0">
+                    <div class="col-xl-6 col-md-6 order-md-last">
+                        <div class="people-img h-100" data-aos="blend" data-aos-delay="200">
+                            <img src="assets/images/people/sasha.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="section-article h-100 d-flex flex-column justify-content-center bg-light p-4 py-lg-5 px-lg-6" section-overlay="5" overlay-position="bottom">
+                            <div class="content-area">
+                                <div class="people-heading mb-4">
+                                    <h3 data-aos="fade-up" data-aos-delay="100" class="text-danger mb-0 fs-xl-5xl lh-base">SASHA GITIN</h3>
+                                    <h6 data-aos="fade-up" data-aos-delay="200" class="text-uppercase">STUDIO DIRECTOR + PHOTOGRAPHER</h6>
+                                </div>
+                                <div data-aos="fade-up" data-aos-delay="500" class="section-content fs-lg-xxl">
+                                    <p>Sasha was born under Europe’s last dictatorship, married by a shaman in Mexico, and once crossed the Amazon in a canoe. Father to three good-looking and occasionally obedient children, his finer skills involve turning creative ideas into engaging images, planting things to watch them grow, and brewing fine tea. Ask about his oolong — it’s to die for.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll-top -->
+    <button class="scroll-top-btn" data-target="html">
+        <img src="assets/images/backtotop.png" alt="">
+    </button>
+    
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <!-- Footer Logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo text-center text-md-start">
+                        <div class="logo-brand d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo-white.png" alt="">
+                            </div>
+                            <div class="vr bg-white mx-3 opacity-100"></div>
+                            <div class="logo">
+                                <h6 class="mb-0 fs-sm fw-light">Doing Good</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyright -->
+                <div class="col-md-6">
+                    <div class="footer-copyright text-center text-md-end">
+                        <ul class="list-inline list-social">
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mb-0 fs-xs">© 2019 Six+One, LLC. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plugin Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

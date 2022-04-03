@@ -1,4 +1,4 @@
-.fullmenu{
+.fullmenu {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -6,127 +6,134 @@
     left: 100%;
     background-color: #cb564a;
     overflow-x: var(--fullmenu-overflow, hidden);
-    @include media-breakpoint-up(lg){
+
+    @include media-breakpoint-up(lg) {
         display: flex;
     }
 
-    p{
+    p {
         font-size: 1.1em;
     }
 
-    &__header{
+    &__header {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         right: 0;
-        @include media-breakpoint-up(lg){
+
+        @include media-breakpoint-up(lg) {
             padding: 2rem;
         }
     }
 
-    &__logo{
+    &__logo {
         display: inline-block;
         max-width: var(--fullmenu-logo-max-width, 76px);
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             --fullmenu-logo-max-width: 150px;
         }
     }
-    &__exit{
+
+    &__exit {
         text-transform: uppercase;
         font-size: rem(16px);
         font-weight: 300;
         letter-spacing: rem(7px);
+        cursor: pointer;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             font-size: rem(25px);
         }
     }
 
-    h1{
+    h1 {
         text-transform: uppercase;
         font-family: $ff-secondary;
-        line-height: 90%;        
+        line-height: 90%;
         font-size: var(--fullmenu-heading-fs, 2.9rem);
         margin: 0.5em 0;
 
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(xl) {
             --fullmenu-heading-fs: 4.5rem;
             margin: 0;
         }
     }
 
-    &__navbar{
-        padding-left: 3rem;    
-        padding-right: 3rem;    
+    &__navbar {
+        padding-left: 3rem;
+        padding-right: 3rem;
         padding-top: var(--fullmenu-navbar-pt, 3rem);
         width: var(--fullmenu-navbar-width, 100%);
         background-color: #cb564a;
 
-        @include media-breakpoint-between(lg, xl){
+        @include media-breakpoint-between(lg, xl) {
             --fullmenu-navbar-width: 38.5%;
         }
 
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(xl) {
             --fullmenu-navbar-width: 48.5%;
             --fullmenu-navbar-pt: 16vh;
         }
     }
 
-    &__getintouch{
+    &__getintouch {
         width: var(--fullmenu-getintouch-width, 100%);
         background-color: #d95f52;
 
-        @include media-breakpoint-between(lg, xl){
+        @include media-breakpoint-between(lg, xl) {
             --fullmenu-getintouch-width: 52%;
         }
-        @include media-breakpoint-up(xl){
+
+        @include media-breakpoint-up(xl) {
             --fullmenu-getintouch-width: 42%;
         }
 
-        .getintouch-form{
+        .getintouch-form {
             width: var(--getintouch-form-width, 80%);
             margin: auto;
 
-            @include media-breakpoint-between(sm, md){
+            @include media-breakpoint-between(sm, md) {
                 max-width: 400px;
             }
 
-            @include media-breakpoint-between(md, lg){
+            @include media-breakpoint-between(md, lg) {
                 max-width: 420px;
             }
-            @include media-breakpoint-up(lg){
+
+            @include media-breakpoint-up(lg) {
                 max-width: 560px;
             }
         }
     }
 
-    &__social{
+    &__social {
         width: var(--fullmenu-social-width, 100%);
         background-color: #e56d60;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             --fullmenu-social-width: 9.5%;
         }
     }
 
-    &__nav-list{
-        li{
+    &__nav-list {
+        li {
             margin-bottom: 0.8em;
             position: relative;
             min-height: 1.9em;
             overflow: hidden;
 
-            a{
+            a {
                 font-size: 1.4em;
                 line-height: 1.8;
                 font-weight: 100;
                 color: $white;
                 text-transform: uppercase;
-                
+
                 cursor: pointer;
                 font-weight: 100;
                 position: relative;
@@ -139,21 +146,22 @@
         }
     }
 
-    article p{
+    article p {
         font-size: 2.5em;
         text-transform: uppercase;
         font-family: $ff-secondary;
         margin: 0;
         line-height: 110%;
     }
-    .list-social li a{
+
+    .list-social li a {
         font-size: var(--social-icon-size, 1.5em);
         display: block;
         color: $white;
         margin: 1em;
-        @include media-breakpoint-up(lg){
+
+        @include media-breakpoint-up(lg) {
             --social-icon-size: 2.3em;
         }
     }
-
 }

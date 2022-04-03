@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixPlusOne</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    <!-- Custom Plugins -->    
+    <script src="assets/js/avatar-solution.js"></script>
+    <!-- JS Plugins -->    
+    <script src="assets/js/swiper-bundle-8.6.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+<body>
+    <!--**|| 01 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__img">
+            <img src="assets/images/logo.gif" alt="">
+        </div>
+    </div>
+
+    <!--**|| 02 Full Menu -->
+    <section id="fullMenu" class="fullmenu bg-danger text-white">
+        <div class="fullmenu__header">
+            <a href="/" class="fullmenu__logo">
+                <img src="assets/images/logo-white.png" alt="">
+            </a>
+            <span menuToggler class="fullmenu__exit">Exit</span>
+        </div>
+
+        <div class="fullmenu__navbar text-center text-start">
+            <div class="navbar-area">
+                <h1 class="mb-4 mb-lg-6">Menu</h1>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="menuList">
+                            <ul class="list-unstyled fullmenu__nav-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">People</a></li>
+                                <li><a href="/">Community</a></li>
+                                <li><a href="/">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="fullmenu__navbar-desc d-none d-xl-block">
+                           <article>
+                             <p>We recommend you try the work section off our menu. It’s delicious.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullmenu__getintouch py-5 d-flex align-items-center">
+            <div class="getintouch-form">
+                <h1>Get In Touch</h1>
+                <p>You can use the form below or email info@sixplusone.com</p>
+                <form class="mb-4">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea name="" id="" class="form-control resize-none" cols="30" rows="3" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-end">
+                        <button class="btn btn-light text-danger">
+                            <span class="fas fa-paper-plane fs-5 me-2"></span>
+                            <span>SEND</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Newsletter -->
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="fs-xl" for="label--newsletter">Sign up for our Newsletter</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                            <span class="fas fa-paper-plane position-absolute end-0 me-4 top-50 translate-middle-y fs-2xl"></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-area text-center text-start">
+                    <div class="row g-2 g-lg-4">
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">New business</h5>
+                                <p><a class="text-white" href="mailto:newbiz@sixplusone.com">newbiz@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">CAREERS</h5>
+                                <p><a class="text-white" href="mailto:careers@sixplusone.com">careers@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">GIVE US A CALL</h5>
+                                <p>646.389.4623</p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">PUBLIC RELATIONS</h5>
+                                <p><a class="text-white" href="mailto:pr@sixplusone.com">pr@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="fullmenu__social d-flex align-items-center justify-content-center">
+            <div class="social-list">
+                <ul class="list-unstyled mb-0 list-social">
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--**|| 03 Header Area -->
+    <header class="header header-light" id="header-sticky">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo-white.png" class="logo-white" alt="">
+            <img src="assets/images/logo-dark.png" class="logo-dark" alt="">
+        </a>
+        <div class="header__toggler">
+            <span menuToggler>Menu</span>
+        </div>
+    </header>
+    
+
+    <main class="main-wrapper">
+
+        <!--**|| 04 Hero Area -->
+        <section class="hero-area hero-topbar bg-cover bg-center" style="--hero-top-bar-padding: 25% 0 3em;background-image: url(assets/images/top-community.jpg);" data-style="light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-article text-center text-white">
+                            <h3 data-aos="fade-up" data-aos-delay="100">CULTURE SHAKERS</h3>
+                            <p data-aos="fade-up" data-aos-delay="200">We know change is not a luxury, it’s a necessity — <br>
+                                to be a force for good and a force for growth. Not just for our bottom <br>
+                                lines, but for the world and the next generation to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 02 Serving Area -->
+        <section class="happiness-serving-area py-5" data-style="light">
+            <div class="video-cover position-relative">
+                <iframe src="https://player.vimeo.com/video/305867222?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--**|| 03 Community Area -->
+        <section class="community-good-doing-area text-center py-5" data-style="dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="community-content">
+                            <div class="section-heading">
+                                <h3 data-aos="fade-up" data-aos-delay="100" class="fs-lg-6xl">A COMMUNITY OF DOING GOOD</h3>
+                                <p data-aos="fade-up" data-aos-delay="300">We’re only as good as the communities we serve. Check out some of the work <br>we’ve done for our community near and far.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 03 HOMELESSNESS Area -->
+        <section class="functional-homeless--area text-center bg-center bg-cover bg-dark text-white" style="background-image: url(assets/images/community/Community_img1.jpg);" data-style="light">
+            <div class="container">
+                <div class="row single-item-height align-items-end justify-content-center">
+                    <div class="col-xxl-9 col-xl-10">
+                        <div class="function-content py-5">
+                            <div class="section-article">
+                                <h6 data-aos="fade-up" data-aos-delay="100">NEW YORK CITY & NEW JERSEY</h6>
+                                <h3 data-aos="fade-up" data-aos-delay="200" class="fs-4xl fs-lg-6xl">FUNCTIONAL ZERO HOMELESSNESS</h3>
+                                <p data-aos="fade-up" data-aos-delay="300">This may sound like a tall order, but we’re looking to bring homelessness to ‘Functional Zero’ in New York City. Which is why we started a nonprofit organization called “For The Greater Hood”. We’re committed to this cause and will not stop until we see this goal come to fruition with the help of our community and our amazing partners.</p>
+                                <a data-aos="fade-up" data-aos-delay="600" href="#" class="link-light text-decoration-underline">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 03 Results & Impact Area -->
+        <section class="results-impact-area py-5 py-lg-7 text-center" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading mb-6" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-dark fs-lg-6xl">Results & Impact</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 gx-lg-7">
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>14K <img src="assets/images/icon/ico_clothes.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Articles of clothing given to those in need</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>1,500 <img src="assets/images/icon/ico_people.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Homeless individuals clothed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>3 <img src="assets/images/icon/ico_locations.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Locales reached so far: Manhattan, Brooklyn & Paterson, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 03 HOMELESSNESS Area -->
+        <section class="functional-homeless--area text-center bg-center bg-cover bg-dark text-white" style="background-image: url(assets/images/community/Community_img2.jpg);" data-style="light">
+            <div class="container">
+                <div class="row single-item-height align-items-end justify-content-center">
+                    <div class="col-xxl-9 col-xl-10">
+                        <div class="function-content py-5">
+                            <div class="section-article">
+                                <h6 data-aos="fade-up" data-aos-delay="100">NEW YORK CITY</h6>
+                                <h3 data-aos="fade-up" data-aos-delay="200" class="fs-4xl fs-lg-6xl">HELPING TO BAN SINGLE-USE PLASTIC STRAWS</h3>
+                                <p data-aos="fade-up" data-aos-delay="300">Helping to ban single-use plastic straws In May 2018, we partnered with our friends over at the New York Aquarium to help spread the word and pass a ban on single-use plastic straws in NYC. The campaign acquired enough buzz to gain attention from local legislators and congress members to continue pushing for the bill to pass. The awareness created, and discussions elicited, far exceeded the initial dollar spend for the campaign and empowered New Yorkers to take action on a cause worth believing in.</p>
+                                <a data-aos="fade-up" data-aos-delay="600" href="#" class="link-light text-decoration-underline">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--**|| 03 Results & Impact Area -->
+        <section class="results-impact-area py-5 py-lg-7 text-center" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading mb-6" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-dark fs-lg-6xl">Results & Impact</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 gx-lg-7">
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>250 <img src="assets/images/icon/ico_location_market.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Bodegas participated in banning plastic straws and offering
+                                    eco-friendly alternatives</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>60 <img src="assets/images/icon/ico_location_restaurant.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Restaurants signed on and took the plastic straw ban pledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>2,000 <img src="assets/images/icon/ico_plus.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Petitions signed in just 3 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 03 HOMELESSNESS Area -->
+        <section class="functional-homeless--area text-center bg-center bg-cover bg-dark text-white" style="background-image: url(assets/images/community/Community_img3.jpg);" data-style="light">
+            <div class="container">
+                <div class="row single-item-height align-items-end justify-content-center">
+                    <div class="col-xxl-9 col-xl-10">
+                        <div class="function-content py-5">
+                            <div class="section-article">
+                                <h6 data-aos="fade-up" data-aos-delay="100">PUERTO RICO</h6>
+                                <h3 data-aos="fade-up" data-aos-delay="200" class="fs-4xl fs-lg-6xl">HURRICANE MARIA RELIEF FUND</h3>
+                                <p data-aos="fade-up" data-aos-delay="300">We believe in filling in the gaps where we can. So when Maria hit Puerto Rico in 2017, we decided to do whatever we could to help out. We created a fundraiser party at our office and invited the advertising community to come and donate for a great cause.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--**|| 03 Results & Impact Area -->
+        <section class="results-impact-area py-5 py-lg-7 text-center" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading mb-6" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-dark fs-lg-6xl">Results & Impact</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 gx-lg-7">
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>$15K <img src="assets/images/icon/ico_plus.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Raised in just under 3 months</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>300 <img src="assets/images/icon/ico_people_plus.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>People fed and clothed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Results -->
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="single-results">
+                            <div class="section-article">
+                                <h3>2,000 <img src="assets/images/icon/ico_technology.png" class="align-top mt-2" style="height: .78em;" alt=""></h3>
+                                <p>Households provided with major appliances</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 03 HOMELESSNESS Area -->
+        <section class="functional-homeless--area text-center bg-center bg-cover bg-dark text-white" style="background-image: url(assets/images/community/Community_img4.jpg);" data-style="light">
+            <div class="container">
+                <div class="row single-item-height align-items-end justify-content-center">
+                    <div class="col-xxl-9 col-xl-10">
+                        <div class="function-content py-5">
+                            <div class="section-article">
+                                <h6 data-aos="fade-up" data-aos-delay="100">USA</h6>
+                                <h3 data-aos="fade-up" data-aos-delay="200" class="fs-4xl fs-lg-6xl">SPREADING “GOOD NEWS”</h3>
+                                <p data-aos="fade-up" data-aos-delay="300">Today media is used to perpetuate fear. From worldwide suffering, to hurricanes, politics, and mass murders, we are constantly bombarded with fear and negativity. In 2017, we partnered with our friends at BlindKnight Studios and helped them create a name/brand positioning for their new media outlet we called “Freequency”. The sole purpose of Freequency was to highlight the positive changes that are taking place in and around our communities in the USA, via an intimate-styled interview hosted by Jannle Gueits.</p>
+                                <a data-aos="fade-up" data-aos-delay="600" href="#" class="link-light text-decoration-underline">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Scroll-top -->
+    <button class="scroll-top-btn" data-target="html">
+        <img src="assets/images/backtotop.png" alt="">
+    </button>
+    
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <!-- Footer Logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo text-center text-md-start">
+                        <div class="logo-brand d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo-white.png" alt="">
+                            </div>
+                            <div class="vr bg-white mx-3 opacity-100"></div>
+                            <div class="logo">
+                                <h6 class="mb-0 fs-sm fw-light">Doing Good</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyright -->
+                <div class="col-md-6">
+                    <div class="footer-copyright text-center text-md-end">
+                        <ul class="list-inline list-social">
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mb-0 fs-xs">© 2019 Six+One, LLC. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plugin Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

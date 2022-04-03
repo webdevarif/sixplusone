@@ -1,0 +1,8 @@
+[data-aos^='blend'][data-aos^='blend'] {
+    filter: grayscale(100%);
+    transition-property: filter;
+
+    &.aos-animate {
+        filter: grayscale(0%);
+    }
+}

@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
 
     <!-- Font Awesome -->
@@ -28,7 +28,12 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
-    <!-- JS Plugins -->
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    <!-- Custom Plugins -->    
+    <script src="assets/js/avatar-solution.js"></script>
+    <!-- JS Plugins -->    
     <script src="assets/js/swiper-bundle-8.6.min.js"></script>
     <script src="assets/js/avatar-solution.js"></script>
 </head>
@@ -44,7 +49,7 @@
     <section id="fullMenu" class="fullmenu bg-danger text-white">
         <div class="fullmenu__header">
             <a href="/" class="fullmenu__logo">
-                <img src="assets/images/white_logo.png" alt="">
+                <img src="assets/images/logo-white.png" alt="">
             </a>
             <span menuToggler class="fullmenu__exit">Exit</span>
         </div>
@@ -166,16 +171,323 @@
     </section>
 
 
-    <!--**|| 02 Full Menu -->
-    <header class="header bg-primary d-flex justify-content-between align-items-center">
-        <div class="header__logo">
-            <img src="assets/images/white_logo.png" alt="">
-        </div>
-        <div class="header__menuToggle">
-            <span menuToggler class="text-uppercase fs-2xl">Menu</span>
+
+    <!--**|| 03 Header Area -->
+    <header class="header header-light" id="header-sticky">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo-white.png" class="logo-white" alt="">
+            <img src="assets/images/logo-dark.png" class="logo-dark" alt="">
+        </a>
+        <div class="header__toggler">
+            <span menuToggler>Menu</span>
         </div>
     </header>
     
+
+    <main class="main-wrapper">
+
+        <!--**|| 04 Hero Video Area -->
+        <section class="hero-video" data-style="light">
+            <iframe id="projectplayer" src="https://player.vimeo.com/video/305823380?api=1&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+        
+        <!--**|| 05 Doing Good Area -->
+        <section class="doing-good-area pt-6 pb-5 text-center bg-danger text-white" go-page="thanks" data-style="dark">
+            <h4 data-aos="fade-up" data-aos-delay="200" class="fw-light mb-0">We are in the business of</h4>
+            <h2 data-aos="fade-up" data-aos-delay="500" class="mb-0 fs-6xl ff-secondary">DOING GOOD</h2>
+        </section>
+        
+        <!--**|| 05 Purpose Driven Area -->
+        <section class="purpose-driven-area pt-6 pb-5 text-center text-white" data-style="light" style="background-image: url('assets/images/purpose-driven-bg.jpg');" data-angle="bottom">
+            <div class="purpose-driven-area-inner" style="background-image: url('assets/images/shadow.png');">
+                <h2 data-aos="fade-up" data-aos-delay="200" class="mb-5 mb-xl-6 fs-2xl ff-secondary">Making A Difference Is The Only Progress That Matters</h2>
+
+                <div class="container">
+                    <div class="row g-2 gx-sm-4 gx-xl-5">
+                        <!-- Single Portrain Image -->
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100" >
+                            <div class="portrain-single">
+                                <img src="assets/images/portrain/strategy.jpg" alt="">
+
+                                <div class="portrain-content">
+                                    <h2 data-aos="fade-up" data-aos-delay="300" class="fs-2xl ff-secondary text-uppercase">STRATEGY</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Portrain Image -->
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="portrain-single">
+                                <img src="assets/images/portrain/branding.jpg" alt="">
+
+                                <div class="portrain-content">
+                                    <h2 data-aos="fade-up" data-aos-delay="400" class="fs-2xl ff-secondary text-uppercase">Branding</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Portrain Image -->
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="portrain-single">
+                                <img class="dinohead" src="assets/images/portrain/creative_a.png" alt="">
+                                <img src="assets/images/portrain/creative.jpg" alt="">
+                                <img class="dinotail" src="assets/images/portrain/creative_c.png" alt="">
+
+                                <div class="portrain-content">
+                                    <h2 data-aos="fade-up" data-aos-delay="500" class="fs-2xl ff-secondary text-uppercase">CREATIVE</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Portrain Image -->
+                        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div class="portrain-single">
+                                <img src="assets/images/portrain/production.jpg" alt="">
+
+                                <div class="portrain-content">
+                                    <h2 data-aos="fade-up" data-aos-delay="600" class="fs-2xl ff-secondary text-uppercase">PRODUCTION</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--**|| 06 News Sharing Area -->
+        <section class="news-sharing py-4" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-heading mb-4">
+                            <h2 class="d-inline-block">News <span> <div data-aos="fade-left" data-aos-delay="200">Wordth Sharing</div></span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-sharing-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="news-sharing-inner">
+                                <div class="news-sharing-bg" data-aos="fade-left" data-aos-delay="200" style="background-image: url('assets/images/news-sharing-bg.jpg');"></div>
+                                <div class="news-sharing-info" data-aos="fade-right" data-aos-delay="200">
+                                    <div class="row">
+                                        <div class="col-xl-8 col-lg-10">
+                                            <div class="section-heading bg-white info-box shadow-sm">
+                                                <h4 class="mb-0 text-info fw-bold">Forbes</h4>
+                                                <h3><span>THE POWER OF PURPOSE:</span>HOW SIX+ONE IS USING <br class="d-none d-xl-block">CREATIVITY FOR GOOD</h3>
+                                                <p>An innovative purpose-driven NYC agency dedicated to building relationships with brands and their consumers that goes beyond the purchase of a product.</p>
+                                                <a class="fw-bold text-dark" href="#">Read More ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 07 World Impact Area -->
+        <section class="news-sharing world-impact py-4" data-style="dark">
+            <div class="news-sharing-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="news-sharing-inner">
+                                <div class="news-sharing-bg" data-aos="fade-right" data-aos-delay="200" style="background-image: url('assets/images/positive_world.jpg');"></div>
+                                <div class="news-sharing-info" data-aos="fade-left" data-aos-delay="200" >
+                                    <div class="row justify-content-end">
+                                        <div class="col-xl-8 col-lg-10">
+                                            <div class="section-heading bg-white info-box shadow-sm">
+                                                <img src="assets/images/awards.png" height="50px" alt="">
+                                                <h3><span>FINALISTS:</span>POSITIVE WORLD IMPACT</h3>
+                                                <p>With entries from over 62 countries we're happy to announce we're finalists in one of the best categories that exemplifies what we stand for "Doing Good".</p>
+                                                <p>Thanks to all our supporters and all who volunteered.</p>
+                                                <a class="fw-bold text-dark" href="#">Read More ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 08 Work Love Area -->
+        <section class="work-love py-4" go-page="ftgh" data-style="light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-heading mb-5 text-center">
+                            <h2 class="d-inline-block">Work <span> <div data-aos="fade-left" data-aos-delay="200">We Love</div></span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="we-love-wrapper py-5 bg-cover bg-center" style="background-image: url('assets/images/greater_hood.jpg');">
+                <div class="container-fluid gx-lg-5">
+                    <div class="row align-items-end min-vh-100">
+                        <div class="col-lg-12">
+                            <div class="we-love-content section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>For the greater Hood</span>Warmth is a human Right</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 09 Zoo Area -->
+        <section class="zoo-area py-4" data-style="light">
+            <div class="zoo-area-wrapper py-5 bg-cover bg-center" style="background-image: url('assets/images/zoo.jpg');">
+                <div class="container-fluid gx-lg-5">
+                    <div class="row align-items-end min-vh-100">
+                        <div class="col-lg-12">
+                            <div class="we-love-content section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>The Bronx Zoo</span>Make Your Day Prehistoric</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" data-aos="fade-up" data-aos-delay="600" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 10 Double Work Area -->
+        <section class="double-work-area py-4" data-style="light">
+            <div class="double-work-area-wrapper">
+                <div class="container-fluid gx-0">
+                    <div class="row">
+                        <div class="col-lg-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/ck-work.jpg');">
+                            <div class="we-love-content py-3 section-article">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>Calvin Klein</span>GRAB A FRESH PAIR</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-dark" href="#">See Project ></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/wcs.jpg');">
+                            <div class="we-love-content py-3 section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>The Bronx Zoo</span>Make Your Day Prehistoric</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 09 Spectrum Area -->
+        <section class="spactrum-area py-4" data-style="light">
+            <div class="spactrum-area-wrapper py-5 bg-cover bg-center" style="background-image: url('assets/images/spectrum_h.jpg');">
+                <div class="container-fluid gx-lg-5">
+                    <div class="row align-items-end min-vh-100">
+                        <div class="col-lg-12">
+                            <div class="we-love-content section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>Spectrum</span>Free Your Content</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--**|| 10 Double Work Area -->
+        <section class="reel-area py-5" data-style="dark">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="section-heading px-4 px-lg-5">
+                            <h2 class="d-inline-block">Watch <br>Us <br>Shine! <span><div data-aos="fade-left" data-aos-delay="200">See Our Reel</div></span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="video-cover">
+                            <iframe src="https://player.vimeo.com/video/334777639?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 10 Double Work Area -->
+        <section class="double-work-area" data-style="light">
+            <div class="double-work-area-wrapper">
+                <div class="container-fluid gx-0">
+                    <div class="row">
+                        <div class="col-lg-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/lifely.jpg');">
+                            <div class="we-love-content py-3 section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>lifely</span>Life Insurance For the Digital Age</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/blackture.jpg');">
+                            <div class="we-love-content py-3 section-article text-white">
+                                <h5 data-aos="fade-up" data-aos-delay="200">WORK</h5>
+                                <h3 data-aos="fade-up" data-aos-delay="300"><span>Blackture</span>See the superbowl commercial</h3>
+                                <a data-aos="fade-up" data-aos-delay="500" class="more-link text-white" href="#">See Project ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll-top -->
+    <button class="scroll-top-btn" data-target="html">
+        <img src="assets/images/backtotop.png" alt="">
+    </button>
+    
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <!-- Footer Logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo text-center text-md-start">
+                        <div class="logo-brand d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo-white.png" alt="">
+                            </div>
+                            <div class="vr bg-white mx-3 opacity-100"></div>
+                            <div class="logo">
+                                <h6 class="mb-0 fs-sm fw-light">Doing Good</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyright -->
+                <div class="col-md-6">
+                    <div class="footer-copyright text-center text-md-end">
+                        <ul class="list-inline list-social">
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mb-0 fs-xs">© 2019 Six+One, LLC. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Plugin Js -->
     <script src="assets/js/aos.js"></script>
 

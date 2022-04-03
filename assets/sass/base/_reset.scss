@@ -16,11 +16,11 @@ body {
 }
 
 body {
-  font-size: $fs-md; 
+  font-size: 14px; 
   font-family: $ff-primary;
-  line-height: 1.4;
+  line-height: 1.7;
   font-weight: 400;
-  color: $gray-600;
+  color: $black;
   background-color: $white;
 
   &.loading{
@@ -30,6 +30,10 @@ body {
 
 p{
   margin-bottom: 15px;
+
+  @include media-breakpoint-up(xl){
+    font-size: 20px;
+  }
 }
 
 
@@ -147,3 +151,5 @@ textarea:focus {
 
 .cursor-pointer{cursor: pointer;}
 .resize-none{resize: none;}
+.main-wrapper{overflow-x: hidden;}
+.fw-medium, .fw-semibold{font-weight: 500 !important;}

@@ -7,7 +7,10 @@
     height: 100%;
     width: 100%;
     top: 0;
-    left: var(--preloader-left, 0);
+    left: 0;
+    z-index: 9999;
+    -webkit-transition: left .25s;
+    transition: left .25s;
 
     &__img{
         max-width: 380px;

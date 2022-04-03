@@ -1,0 +1,8 @@
+.news-purpose-col{
+    background-color: $danger-dark;
+
+    @include media-breakpoint-up(xl){
+        background-size: cover;
+        background-position: bottom center;
+    }
+}

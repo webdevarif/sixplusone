@@ -4,11 +4,12 @@
 $min-contrast-ratio: 3;
 
 // COLORS
-$primary:  #008BAD;
-$secondary:#9BDBF3;
-$info:     #1D748A;
-$danger:   #CA564A;
-$success:  #4A7473;
+$primary:     #008BAD;
+$secondary:   #9BDBF3;
+$info:        #1D748A;
+$danger:      #CA564A;
+$danger-dark: #953328;
+$success:     #4A7473;
 
 // OTHER COLORS
 $white:    #fff !default;
@@ -28,12 +29,12 @@ $fs-xs:   12px;
 $fs-sm:   14px;
 $fs-md:   16px;
 $fs-lg:   18px;
-$fs-xl:   20px;
-$fs-2xl:  25px;
-$fs-3xl:  30px;
-$fs-4xl:  35px;
-$fs-5xl:  45px;
-$fs-6xl:  65px;
+$fs-xl:   1.5rem;
+$fs-2xl:  2rem;
+$fs-3xl:  2.4rem;
+$fs-4xl:  3rem;
+$fs-5xl:  4.5rem;
+$fs-6xl:  5.4rem;
 
 // SIZES LIST
 $sizes-list : (
@@ -72,12 +73,14 @@ $variable-prefix: avs- !default;
 // FONT FAMILY
 $ff-primary: 'Montserrat', Helvetica, sans-serif;
 $ff-secondary: 'Helvetica LT UltraCompressed';
+$ff-roboto: 'Roboto', sans-serif;
 $ff-fa: "Font Awesome 5 Pro";
 
 // FONT FAMILY LIST
 $ff-list: (
   'primary': $ff-primary,
   'secondary': $ff-secondary,
+  'roboto': $ff-roboto,
   'fa': $ff-fa,
 ) !default;
 
@@ -85,6 +88,25 @@ $ff-list: (
 
 // CUSTOMIZATION BOOTSTRAP
 // -----------------------
+
+
+// CONTAINER
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 80%,
+);
+// DISPLAY FONT SIZES
+$display-font-sizes: (
+  1: 7rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
 
 
 // NAVBAR

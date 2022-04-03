@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixPlusOne</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    <!-- Custom Plugins -->    
+    <script src="assets/js/avatar-solution.js"></script>
+    <!-- JS Plugins -->    
+    <script src="assets/js/swiper-bundle-8.6.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+<body>
+    <!--**|| 01 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__img">
+            <img src="assets/images/logo.gif" alt="">
+        </div>
+    </div>
+
+    <!--**|| 02 Full Menu -->
+    <section id="fullMenu" class="fullmenu bg-danger text-white">
+        <div class="fullmenu__header">
+            <a href="/" class="fullmenu__logo">
+                <img src="assets/images/logo-white.png" alt="">
+            </a>
+            <span menuToggler class="fullmenu__exit">Exit</span>
+        </div>
+
+        <div class="fullmenu__navbar text-center text-start">
+            <div class="navbar-area">
+                <h1 class="mb-4 mb-lg-6">Menu</h1>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="menuList">
+                            <ul class="list-unstyled fullmenu__nav-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">People</a></li>
+                                <li><a href="/">Community</a></li>
+                                <li><a href="/">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="fullmenu__navbar-desc d-none d-xl-block">
+                           <article>
+                             <p>We recommend you try the work section off our menu. It’s delicious.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullmenu__getintouch py-5 d-flex align-items-center">
+            <div class="getintouch-form">
+                <h1>Get In Touch</h1>
+                <p>You can use the form below or email info@sixplusone.com</p>
+                <form class="mb-4">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">    
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea name="" id="" class="form-control resize-none" cols="30" rows="3" placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-end">
+                        <button class="btn btn-light text-danger">
+                            <span class="fas fa-paper-plane fs-5 me-2"></span>
+                            <span>SEND</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Newsletter -->
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="fs-xl" for="label--newsletter">Sign up for our Newsletter</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                            <span class="fas fa-paper-plane position-absolute end-0 me-4 top-50 translate-middle-y fs-2xl"></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-area text-center text-start">
+                    <div class="row g-2 g-lg-4">
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">New business</h5>
+                                <p><a class="text-white" href="mailto:newbiz@sixplusone.com">newbiz@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">CAREERS</h5>
+                                <p><a class="text-white" href="mailto:careers@sixplusone.com">careers@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">GIVE US A CALL</h5>
+                                <p>646.389.4623</p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">PUBLIC RELATIONS</h5>
+                                <p><a class="text-white" href="mailto:pr@sixplusone.com">pr@sixplusone.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="fullmenu__social d-flex align-items-center justify-content-center">
+            <div class="social-list">
+                <ul class="list-unstyled mb-0 list-social">
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--**|| 03 Header Area -->
+    <header class="header header-light" id="header-sticky">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo-white.png" class="logo-white" alt="">
+            <img src="assets/images/logo-dark.png" class="logo-dark" alt="">
+        </a>
+        <div class="header__toggler">
+            <span menuToggler>Menu</span>
+        </div>
+    </header>
+    
+
+    <main class="main-wrapper">
+
+        <!--**|| 04 Hero Area -->
+        <section class="hero-area hero-topbar bg-cover bg-center" style="background-image: url(assets/images/top.jpg);" data-style="light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-article text-center text-white">
+                            <h3>MARKETING PURPOSE OVER PURCHASE</h3>
+                            <p class="mb-0">A purpose-driven brand mobilizes people in a way that pursuing profits alone never will</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 02 Filter Selection Area -->
+        <section class="filter-selection-area py-5 text-center" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="filter-selection-list">
+                            <ul class="list-inline text-uppercase mb-0">
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer text-danger">Featured</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Branding</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Campaigns</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Content</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Ooh/Experiential</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Packaging</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Production</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">Websites</li>
+                                <li class="list-inline-item mx-lg-4 p-2 px-lg-4 fs-lg fw-medium cursor-pointer">All Projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--**|| 05 Work List Area -->
+        <section class="double-work-area py-4" data-style="light">
+            <div class="double-work-area-wrapper">
+                <div class="container-fluid gx-0">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/contents.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>Specturm</h5>
+                                <h3><span>Calvin Klein</span>GRAB A FRESH PAIR</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Production</li>
+                                    <li class="list-inline-item">Campaign</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/ftgh.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>For the Greater Hood</h5>
+                                <h3>Warmth is a Human Right</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Campaign</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Ooh/Experiential</li>
+                                    <li class="list-inline-item">Production</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/safari.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>The Bronx Zoo</h5>
+                                <h3>Make Your day pheristoric</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Campaign</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Ooh/Experiential</li>
+                                    <li class="list-inline-item">Production</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/spectrum_h.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>For the Greater Hood</h5>
+                                <h3>Warmth is a Human Right</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/ck-work.jpg');">
+                            <div class="py-3 section-article">
+                                <h5>Calvin Klein</h5>
+                                <h3>Grab a Fresh Pair</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Packaging</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/wcs.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>WCS</h5>
+                                <h3>Give me a sip. save marine Life.</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Campaigns</li>
+                                    <li class="list-inline-item">Ooh/Experiential</li>
+                                    <li class="list-inline-item">Production</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/jtcc2018.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>JTCC 2018</h5>
+                                <h3>pioneering the possible</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Campaigns</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Production</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/bodyarmor.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>Bodyarmor</h5>
+                                <h3>taking over the water category</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Ooh/Experiential</li>
+                                    <li class="list-inline-item">Websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/ck-work.jpg');">
+                            <iframe src="https://player.vimeo.com/video/306221142?api=1&amp;background=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:101%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+                            <div class="py-3 section-article text-white">
+                                <h5>Calvin Klein</h5>
+                                <h3>Grab a Fresh Pair</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Packaging</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/lifely.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>Lifely</h5>
+                                <h3>Quick, Click, insure our humanity</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Campaigns</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/safari.jpg');">
+                            <iframe src="https://player.vimeo.com/video/306221119?api=1&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:101%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            <div class="py-3 section-article text-white">
+                                <h5>HAUS</h5>
+                                <h3>tirelessly versatile</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/wcs.jpg');">
+                            <iframe src="https://player.vimeo.com/video/306221170?api=1&background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:101%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            <div class="py-3 section-article text-white">
+                                <h5>Pirate's Booty</h5>
+                                <h3>healthi-aarrr snacking</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Branding</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Packaging</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/d-con.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>D-Con</h5>
+                                <h3>man versus mouse</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Campaigns</li>
+                                    <li class="list-inline-item">Content</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-sm-6 bg-cover bg-center position-relative single-item-height p-4 px-lg-5 d-flex flex-column justify-content-end" style="background-image: url('assets/images/westin.jpg');">
+                            <div class="py-3 section-article text-white">
+                                <h5>Westin</h5>
+                                <h3>HOW IT SHOULD FEEL</h3>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item">Campaigns</li>
+                                    <li class="list-inline-item">Content</li>
+                                    <li class="list-inline-item">Ooh/Experiential</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll-top -->
+    <button class="scroll-top-btn" data-target="html">
+        <img src="assets/images/backtotop.png" alt="">
+    </button>
+    
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <!-- Footer Logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo text-center text-md-start">
+                        <div class="logo-brand d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo-white.png" alt="">
+                            </div>
+                            <div class="vr bg-white mx-3 opacity-100"></div>
+                            <div class="logo">
+                                <h6 class="mb-0 fs-sm fw-light">Doing Good</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyright -->
+                <div class="col-md-6">
+                    <div class="footer-copyright text-center text-md-end">
+                        <ul class="list-inline list-social">
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mb-0 fs-xs">© 2019 Six+One, LLC. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plugin Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>    
+</body>
+</html>

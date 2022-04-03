@@ -1,4 +1,6 @@
 var elemStyle = new Array();
+var elemIndex = new Array();
+var elemID = new Array();
 var elemPosIni = new Array();
 var elemPosEnd = new Array();
 var elemHeg = new Array();
@@ -12,125 +14,64 @@ var navbarHeight = 64;
 var menuStat = 0;
 var generalWidth, resolutionDir, sizeDir;
 
+var imgOptiUrl = localStorage.getItem('imgOptiUrl');
+
+var imageAddr, downloadSize, LowLimit;
+
+
+// Target Items
+var wd_preloader = $("#preloader");
+var wd_fullMenu = $("#fullMenu");
+var wd_headerSticky = $("#header-sticky");
+var wd_scrollspy = $('[scrollspy]');
+var wd_section = $('section');
+var wd_goPage = $('[go-page]');
+var wd_scrollTopButton = $(".scroll-top-btn");
+// Hide Header on on scroll down
+
 
 (function ($) {
 	"use strict";
       
 	$(window).on('load', function () {
+        preloader();
 		aosAnimation();
 	});
 
-	preloader();
-    mobileHeaderActive();
-
     $(document).ready(function() {
-        $( "[menuToggler]" ).click(function() { 
-            openMenu();
-        });
-    
-       
+        // MENU TOGGLER BUTTON
+        $( "[menuToggler]" ).click(function() { openMenu(); });
+
+        // GO PAGE ON CLICK
+        if (wd_goPage.length) {
+            wd_goPage.each(function () {
+                var pageGo = $(this),
+                pageLink = pageGo.attr('go-page');
+                pageGo.on("click", function () {
+                    if(pageLink){
+                        goTo(pageLink)
+                    } else{
+                        goTo('')
+                    }
+                });
+            })
+        }
     });
-       
-    
+
 	/*=============================================
 		=    		 Preloader			      =
 	=============================================*/
     function preloader() {
         // Code to run when the document is ready.
-		$(window).on('load', function () {
-			$('#preloader').addClass('loaded');
-			$("#loading").fadeOut(500);
-
-			if ($('#preloader').hasClass('loaded')) {
-				$('#preloader').delay(900).queue(function () {
-					$(this).remove();
-				});
-			}
-		});
+        wd_preloader.css({ left: "100%" });
     }
-	
-   
-	/*=============================================
-		=    		 Header Sticky			      =
-	=============================================*/
-    if ($('#header-sticky').length) {
-		window.onscroll = function () {
-			const left = document.getElementById("header-sticky");
-
-			if (left.scrollTop > 50 || self.pageYOffset > 50) {
-				left.classList.add("sticky")
-			} else {
-				left.classList.remove("sticky");
-			}
-		}
-    }
-    
-	/*=============================================
-		=    		 Open Menu			      =
-	=============================================*/
-    function openMenu(){
-        var tl1 = new TimelineMax();
-    
-        if(menuStat == 0){ 
-    
-            $("body").css({"overflow": "hidden"});
-            //$('#mainMenu').css({'position': 'fixed'});
-    
-            //$(".allCont").css({'position': 'absolute', 'right': '100%'});
-    
-            stopBodyScrolling(true);
-    
-            tl1.to("#fullMenu", 0.5, { left: 0, ease: Expo.easeout}, .15);
-            $("#menu").css({"background-image":"url(../img/exitBttn.png)"});
-    
-            tl1.to("div.menuList ul li:nth-child(1) a", .45, { top:0, ease: Expo.easeout},.5)
-               .to("div.menuList ul li:nth-child(2) a", .45, { top:0, ease: Expo.easeout},.55)
-               .to("div.menuList ul li:nth-child(3) a", .45, { top:0, ease: Expo.easeout},.65)
-               .to("div.menuList ul li:nth-child(4) a", .45, { top:0, ease: Expo.easeout},.7)
-               .to("div.menuList ul li:nth-child(5) a", .45, { top:0, ease: Expo.easeout},.75)
-               .to("div.menuList ul li:nth-child(6) a", .45, { top:0, ease: Expo.easeout},.8)
-            menuStat++;
-        }
-        else if(menuStat > 0){
-            $("body").css({"overflow": "auto"});
-            //$('#mainMenu').css({'position': 'absolute'});
-    
-            stopBodyScrolling(false);
-    
-            var tl1 = new TimelineMax();
-            tl1.to("div.menuList ul li:nth-child(1) a", .35, { top:"40px", ease: Expo.easeout},.05)
-               .to("div.menuList ul li:nth-child(2) a", .35, { top:"40px", ease: Expo.easeout},.15)
-               .to("div.menuList ul li:nth-child(3) a", .35, { top:"40px", ease: Expo.easeout},.25)
-               .to("div.menuList ul li:nth-child(4) a", .35, { top:"40px", ease: Expo.easeout},.35)
-               .to("div.menuList ul li:nth-child(5) a", .35, { top:"40px", ease: Expo.easeout},.45)
-               .to("div.menuList ul li:nth-child(6) a", .35, { top:"40px", ease: Expo.easeout},.5)
-               .to("#fullMenu", 0.45, { left: "100%", ease: Expo.easeout}, .75);
-    
-            setInterval(function() { $("#menu").css({"background-image":"url(../img/menuBttn_bw.png)"});  }, 850);
-    
-            //$("#menu").css({"background-image":"url(../img/menuBttn_bw.png)"});
-            menuStat = 0;
-        }
-    }
-    
-    function stopBodyScrolling (bool) {
-        if (bool === true) {
-            document.body.addEventListener("touchmove", freezeVp, false);
-        } else {
-            document.body.removeEventListener("touchmove", freezeVp, false);
-        }
-    }
-    var freezeVp = function(e) {
-        e.preventDefault();
-    };
-    
 
 	/*=============================================
 		=    		 Swiper Slider			      =
 	=============================================*/
-	var avs_slider = $('[avs-slider]');
-    if (avs_slider.length) {
-		avs_slider.each(function () {
+	var wd_slider = $('[avs-slider]');
+    if (wd_slider.length) {
+		wd_slider.each(function () {
 			var SwiperCarousel = $(this),
             // Slides SpaceBetween
 			slidesSpaceBetween = SwiperCarousel.data('spaceBetween'),
@@ -213,154 +154,6 @@ var generalWidth, resolutionDir, sizeDir;
 		});		
 	}
 
-	
-	/*=============================================
-		=    		 Mobile Menu  	         =
-	=============================================*/
-    /* Get Sibling */
-    const getSiblings = function (elem) {
-        const siblings = []
-        let sibling = elem.parentNode.firstChild
-        while (sibling) {
-            if (sibling.nodeType === 1 && sibling !== elem) {
-                siblings.push(sibling)
-            }
-            sibling = sibling.nextSibling
-        }
-        return siblings
-    }
-
-    /* Slide Up */
-    const slideUp = (target, time) => {
-        const duration = time ? time : 500;
-        target.style.transitionProperty = 'height, margin, padding'
-        target.style.transitionDuration = duration + 'ms'
-        target.style.boxSizing = 'border-box'
-        target.style.height = target.offsetHeight + 'px'
-        target.offsetHeight
-        target.style.overflow = 'hidden'
-        target.style.height = 0
-        window.setTimeout(() => {
-            target.style.display = 'none'
-            target.style.removeProperty('height')
-            target.style.removeProperty('overflow')
-            target.style.removeProperty('transition-duration')
-            target.style.removeProperty('transition-property')
-        }, duration)
-    }
-
-    /* Slide Down */
-    const slideDown = (target, time) => {
-        const duration = time ? time : 500;
-        target.style.removeProperty('display')
-        let display = window.getComputedStyle(target).display
-        if (display === 'none') display = 'block'
-        target.style.display = display
-        const height = target.offsetHeight
-        target.style.overflow = 'hidden'
-        target.style.height = 0
-        target.offsetHeight
-        target.style.boxSizing = 'border-box'
-        target.style.transitionProperty = 'height, margin, padding'
-        target.style.transitionDuration = duration + 'ms'
-        target.style.height = height + 'px'
-        window.setTimeout(() => {
-            target.style.removeProperty('height')
-            target.style.removeProperty('overflow')
-            target.style.removeProperty('transition-duration')
-            target.style.removeProperty('transition-property')
-        }, duration)
-    }
-
-    /* Slide Toggle */
-    const slideToggle = (target, time) => {
-        const duration = time ? time : 500;
-        if (window.getComputedStyle(target).display === 'none') {
-            return slideDown(target, duration)
-        } else {
-            return slideUp(target, duration)
-        }
-    }
-
-	/*=============================================
-		=  Offcanvas/Collapseable Menu	         =
-	=============================================*/
-    if ($('.offcanvas-menu').length) {
-        const offCanvasMenu = function (selector) {
-            const $offCanvasNav = document.querySelector(selector),
-            $subMenu = $offCanvasNav.querySelectorAll('.sub-menu');
-            $subMenu.forEach(function (subMenu) {
-                const menuExpand = document.createElement('span')
-                menuExpand.classList.add('menu-expand')
-                // menuExpand.innerHTML = '+'
-                subMenu.parentElement.insertBefore(menuExpand, subMenu)
-                if (subMenu.classList.contains('mega-menu')) {
-                    subMenu.classList.remove('mega-menu')
-                    subMenu.querySelectorAll('ul').forEach(function (ul) {
-                        ul.classList.add('sub-menu')
-                        const menuExpand = document.createElement('span')
-                        menuExpand.classList.add('menu-expand')
-                        menuExpand.innerHTML = '+'
-                        ul.parentElement.insertBefore(menuExpand, ul)
-                    })
-                }
-            })
-
-            $offCanvasNav.querySelectorAll('.menu-expand').forEach(function (item) {
-                item.addEventListener('click', function (e) {
-                    e.preventDefault()
-                    const parent = this.parentElement
-                    if (parent.classList.contains('active')) {
-                        parent.classList.remove('active');
-                        parent.querySelectorAll('.sub-menu').forEach(function (subMenu) {
-                            subMenu.parentElement.classList.remove('active');
-                            slideUp(subMenu)
-                        })
-                    } else {
-                        parent.classList.add('active');
-                        slideDown(this.nextElementSibling)
-                        getSiblings(parent).forEach(function (item) {
-                            item.classList.remove('active')
-                            item.querySelectorAll('.sub-menu').forEach(function (subMenu) {
-                                subMenu.parentElement.classList.remove('active');
-                                slideUp(subMenu)
-                            })
-                        })
-                    }
-                })
-            })
-        }
-        offCanvasMenu('.offcanvas-menu');
-    }
-
-	// console.log($subMenu);
-
-    /*====== Sidebar menu Active ======*/
-    function mobileHeaderActive() {
-        var navbarTrigger = $(".burger-icon"),
-            endTrigger = $(".mobile-menu-close"),
-            container = $(".mobile-header-active"),
-            wrapper4 = $("body");
-
-        wrapper4.prepend('<div class="body-overlay"></div>');
-
-        navbarTrigger.on("click", function (e) {
-            e.preventDefault();
-            container.addClass("sidebar-visible");
-            wrapper4.addClass("mobile-menu-active");
-        });
-
-        endTrigger.on("click", function () {
-            container.removeClass("sidebar-visible");
-            wrapper4.removeClass("mobile-menu-active");
-        });
-
-        $(".body-overlay").on("click", function () {
-            container.removeClass("sidebar-visible");
-            wrapper4.removeClass("mobile-menu-active");
-        });
-    }
-
 	/*=============================================
 		=    		 Aos Active  	         =
 	=============================================*/
@@ -373,31 +166,20 @@ var generalWidth, resolutionDir, sizeDir;
 		});
 	}
 
-
-    // COlor Check
-    
-    var color_check = document.querySelectorAll(".color-check label");
-    color_check.forEach(element => {
-        element.style.backgroundColor = element.getAttribute("data-bg");
-        element.style.color = element.getAttribute("data-color");
+	/*=============================================
+		=    		 Scroll Top Button	         =
+	=============================================*/
+    wd_scrollTopButton.on('click', function () {
+        $("html, body").animate({
+            scrollTop: "0"
+        }, 1200);
     });
 
-    if ($('.product-filters').length) {
-        var submenus = document.querySelectorAll(".product-filters .hassubmenu > a");
-
-        for (var i = 0; i < submenus.length; i++) {
-            submenus[i].addEventListener("click", function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                var last = this.parentElement.classList;
-                if (last.contains('open')){
-                    last.remove("open");
-                } else{
-                    last.add("open");
-                }
-            });
-        }
-    }
+    
+	/*=============================================
+	=    		 ViewPassword On Click      	  =
+	=============================================*/
+	$("[data-wd-scroll]").avsScrollTop();
 
 })(jQuery);
 
@@ -413,8 +195,145 @@ var generalWidth, resolutionDir, sizeDir;
 
 
 
+$(window).resize(function(e){
+    getHeight();
+});
+
+function openMenu(){
+    var tl1 = new TimelineMax();
+    if(menuStat == 0){ 
+        $("body").css({"overflow": "hidden"});
+        stopBodyScrolling(true);
+        tl1.to(wd_fullMenu, 0.5, { left: 0, ease: Expo.easeout}, .15);
+        tl1.to("div.menuList ul li:nth-child(1) a", .45, { top:0, ease: Expo.easeout},.5)
+           .to("div.menuList ul li:nth-child(2) a", .45, { top:0, ease: Expo.easeout},.55)
+           .to("div.menuList ul li:nth-child(3) a", .45, { top:0, ease: Expo.easeout},.65)
+           .to("div.menuList ul li:nth-child(4) a", .45, { top:0, ease: Expo.easeout},.7)
+           .to("div.menuList ul li:nth-child(5) a", .45, { top:0, ease: Expo.easeout},.75)
+           .to("div.menuList ul li:nth-child(6) a", .45, { top:0, ease: Expo.easeout},.8)
+        menuStat++;
+    }
+    else if(menuStat > 0){
+        $("body").css({"overflow": "auto"});
+        stopBodyScrolling(false);
+        var tl1 = new TimelineMax();
+        tl1.to("div.menuList ul li:nth-child(1) a", .35, { top:"40px", ease: Expo.easeout},.05)
+           .to("div.menuList ul li:nth-child(2) a", .35, { top:"40px", ease: Expo.easeout},.15)
+           .to("div.menuList ul li:nth-child(3) a", .35, { top:"40px", ease: Expo.easeout},.25)
+           .to("div.menuList ul li:nth-child(4) a", .35, { top:"40px", ease: Expo.easeout},.35)
+           .to("div.menuList ul li:nth-child(5) a", .35, { top:"40px", ease: Expo.easeout},.45)
+           .to("div.menuList ul li:nth-child(6) a", .35, { top:"40px", ease: Expo.easeout},.5)
+           .to("#fullMenu", 0.45, { left: "100%", ease: Expo.easeout}, .75);
+        menuStat = 0;
+    }
+}
 
 
 
+function stopBodyScrolling (bool) {
+    if (bool === true) {
+        document.body.addEventListener("touchmove", freezeVp, false);
+    } else {
+        document.body.removeEventListener("touchmove", freezeVp, false);
+    }
+}
+
+var freezeVp = function(e) {
+    e.preventDefault();
+};
+
+function getHeight(){
+    var listElements = document.getElementsByTagName('section');
+    for (var i = 0; i < listElements.length; i++) {
+        elemIndex[i] = listElements[i].length;
+        elemStyle[i] = listElements[i].getAttribute('data-style');
+        elemID[i] = listElements[i].getAttribute('id');
+        elemPosIni[i] = (listElements[i].offsetTop - 100);
+        elemHeg[i] = $('section').eq(i).outerHeight();
+        elemPosEnd[i] = (elemPosIni[i] + elemHeg[i]) - 100;
+    }
+}
+
+
+window.addEventListener("scroll", function(event) {
+    
+    getHeight();
+
+    var top = this.scrollY;
+    if(top >= [0] && top < elemPosEnd[0]){
+        wd_headerSticky.css({'position': 'absolute'});
+        wd_scrollTopButton.fadeOut();
+    }
+    else{
+        wd_headerSticky.css({'position': 'fixed'});
+        wd_scrollTopButton.fadeIn();
+    }
+
+
+    for(k=0; k < elemPosIni.length; k++){
+        if( (top >= elemPosIni[k] && top < elemPosEnd[k]) && elemStyle[k] == "light"){
+            wd_headerSticky.removeClass('header-dark').addClass('header-light');
+        }
+        if( (top >= elemPosIni[k] && top < elemPosEnd[k]) && elemStyle[k] == "dark"){ 
+            wd_headerSticky.removeClass('header-light').addClass('header-dark');
+        }
+    }
+    didScroll = true;
+}, false);
+
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() { 
+    var st = $(this).scrollTop();
+   
+    if (st > lastScrollTop && st > navbarHeight){ 
+        // Scroll Down
+        wd_headerSticky.removeClass('nav-down').addClass('nav-up');
+        wd_scrollTopButton.removeClass('hide').addClass('show');
+        
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            wd_headerSticky.removeClass('nav-up').addClass('nav-down');
+            wd_scrollTopButton.removeClass('show').addClass('hide');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+/*=============================================
+    =    		 Preloader			      =
+=============================================*/
+function goTo(direcTo){
+    wd_preloader.css({ left: "0" });
+    $("body").css({"overflow":"visible"});
+    
+    if(direcTo >= 0){
+        setInterval(function() {
+            window.location.href="/" + direcTo +"";
+        }, 250);
+    }
+    else{
+        setInterval(function() {
+            window.location.href="";
+        }, 250);
+    }
+        
+}
+
+
+
+var timerStart = Date.now();
+window.onload = function() {
+    $("body").css({"overflow":"visible"});
+    getHeight();
+};
 
 
