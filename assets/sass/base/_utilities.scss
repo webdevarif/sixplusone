@@ -8,6 +8,11 @@
         position: relative;
         font-family: $ff-secondary;
         letter-spacing: 0.25rem;
+        font-size: var(--section-heading-fs, 3.5rem);
+
+        @include media-breakpoint-up(xl){
+            --section-heading-fs: 7.5rem;
+        }
 
         > span{
             font-size: 50%;
