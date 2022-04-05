@@ -12724,9 +12724,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .hero-topbar {
-  padding: var(--hero-top-bar-padding, 15em 0 3em);
+  padding: var(--hero-top-bar-padding, 7rem 0 2.5rem);
 }
 @media (min-width: 992px) {
+  .hero-topbar {
+    --hero-top-bar-padding: 15rem 0 3rem;
+  }
   .hero-topbar .section-article h3, .hero-topbar .section-article .h3 {
     --section-article-h3-fs: 6em;
   }

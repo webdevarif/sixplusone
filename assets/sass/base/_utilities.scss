@@ -174,9 +174,11 @@ $bg-positions: (
 
 
 .hero-topbar{
-    padding: var(--hero-top-bar-padding, 15em 0 3em);
+    padding: var(--hero-top-bar-padding, 7rem 0 2.5rem);
 
     @include media-breakpoint-up(lg){
+        --hero-top-bar-padding: 15rem 0 3rem;
+        
         .section-article h3{
             --section-article-h3-fs: 6em;
         }
