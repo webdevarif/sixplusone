@@ -8,6 +8,7 @@
         position: relative;
         font-family: $ff-secondary;
         letter-spacing: 0.25rem;
+        font-size: var(--section-heading-h2-fs, 8rem);
 
         > span{
             font-size: 50%;
