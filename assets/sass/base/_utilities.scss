@@ -162,6 +162,7 @@ $bg-positions: (
     bottom: 1em;
     -webkit-transition: right .25s;
     transition: right .25s;
+    z-index: 99;
 
     &.show{
         --scroll-top-right: 1rem;

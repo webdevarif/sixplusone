@@ -1,0 +1,21 @@
+[data-overlay]{
+    position: relative;
+    z-index: 1;
+}
+[data-overlay]:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--avs-overlay-rgb, 0, 0, 0), var(--avs-overlay-opacity, 0.7));
+    z-index: -1;
+    left: 0; top: 0;
+}
+[data-overlay-bg="white"]{
+    --avs-overlay-rgb: var(--avs-white-rgb);
+}
+@for $i from 0 to 11 {
+    [data-overlay="#{$i}"]{
+        --avs-overlay-opacity: calc( #{$i} * 0.1 );
+    }    
+}
