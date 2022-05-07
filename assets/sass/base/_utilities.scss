@@ -8,11 +8,6 @@
         position: relative;
         font-family: $ff-secondary;
         letter-spacing: 0.25rem;
-        font-size: var(--section-heading-fs, 3.5rem);
-
-        @include media-breakpoint-up(xl){
-            --section-heading-fs: 7.5rem;
-        }
 
         > span{
             font-size: 50%;
@@ -174,11 +169,9 @@ $bg-positions: (
 
 
 .hero-topbar{
-    padding: var(--hero-top-bar-padding, 7rem 0 2.5rem);
+    padding: var(--hero-top-bar-padding, 15em 0 3em);
 
     @include media-breakpoint-up(lg){
-        --hero-top-bar-padding: 15rem 0 3rem;
-        
         .section-article h3{
             --section-article-h3-fs: 6em;
         }

@@ -12496,12 +12496,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   position: relative;
   font-family: "Helvetica LT UltraCompressed";
   letter-spacing: 0.25rem;
-  font-size: var(--section-heading-fs, 3.5rem);
-}
-@media (min-width: 1200px) {
-  .section-heading h2, .section-heading .h2 {
-    --section-heading-fs: 7.5rem;
-  }
 }
 .section-heading h2 > span, .section-heading .h2 > span {
   font-size: 50%;
@@ -12724,12 +12718,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .hero-topbar {
-  padding: var(--hero-top-bar-padding, 7rem 0 2.5rem);
+  padding: var(--hero-top-bar-padding, 15em 0 3em);
 }
 @media (min-width: 992px) {
-  .hero-topbar {
-    --hero-top-bar-padding: 15rem 0 3rem;
-  }
   .hero-topbar .section-article h3, .hero-topbar .section-article .h3 {
     --section-article-h3-fs: 6em;
   }
