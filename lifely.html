@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakerhead</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- Vimeo Player -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Custom Plugins -->
+    <script src="assets/js/avatar-solution.js"></script>
+    <!-- JS Plugins -->
+    <script src="assets/js/swiper-bundle-8.6.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+
+<body>
+    <!--**|| 01 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__img">
+            <img src="assets/images/logo.gif" alt="">
+        </div>
+    </div>
+
+    <!--**|| 02 Full Menu -->
+    <section id="fullMenu" class="fullmenu bg-danger text-white">
+        <div class="fullmenu__header">
+            <a href="/" class="fullmenu__logo">
+                <img src="assets/images/logo-white.png" alt="">
+            </a>
+            <span menuToggler class="fullmenu__exit">Exit</span>
+        </div>
+
+        <div class="fullmenu__navbar text-center text-start">
+            <div class="navbar-area">
+                <h1 class="mb-4 mb-lg-6">Menu</h1>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="menuList">
+                            <ul class="list-unstyled fullmenu__nav-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Work</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">People</a></li>
+                                <li><a href="/">Community</a></li>
+                                <li><a href="/">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="fullmenu__navbar-desc d-none d-xl-block">
+                            <article>
+                                <p>We recommend you try the work section off our menu. It’s delicious.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullmenu__getintouch py-5 d-flex align-items-center">
+            <div class="getintouch-form">
+                <h1>Get In Touch</h1>
+                <p>You can use the form below or email info@speakerhead.com</p>
+                <form class="mb-4">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea name="" id="" class="form-control resize-none" cols="30" rows="3"
+                            placeholder="Comment"></textarea>
+                    </div>
+                    <div class="form-group text-end">
+                        <button class="btn btn-light text-danger">
+                            <span class="fas fa-paper-plane fs-5 me-2"></span>
+                            <span>SEND</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Newsletter -->
+                <form>
+                    <div class="form-group mb-4">
+                        <label class="fs-xl" for="label--newsletter">Sign up for our Newsletter!</label>
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                            <span
+                                class="fas fa-paper-plane position-absolute end-0 me-4 top-50 translate-middle-y fs-2xl"></span>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-area text-center text-start">
+                    <div class="row g-2 g-lg-4">
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">New business</h5>
+                                <p><a class="text-white" href="mailto:info@speakerhead.com">info@speakerhead.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">CAREERS</h5>
+                                <p><a class="text-white"
+                                        href="mailto:careers@speakerhead.com">careers@speakerhead.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">GIVE US A CALL</h5>
+                                <p>646.389.4623</p>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5 class="mb-1 text-uppercase">PUBLIC RELATIONS</h5>
+                                <p><a class="text-white" href="mailto:pr@speakerhead.com">pr@speakerhead.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fullmenu__social d-flex align-items-center justify-content-center">
+            <div class="social-list">
+                <ul class="list-unstyled mb-0 list-social">
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a></li>
+                    <li class="d-inline-block d-xl-block"><a href="/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--**|| 03 Header Area -->
+    <header class="header header-light" id="header-sticky">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo-white.png" class="logo-white" alt="">
+            <img src="assets/images/logo-dark.png" class="logo-dark" alt="">
+        </a>
+        <div class="header__toggler">
+            <span menuToggler>Menu</span>
+        </div>
+    </header>
+
+
+    <main class="main-wrapper">
+
+        <!--**|| 04 Hero Area -->
+        <section class="hero-area lifely-hero position-relative" data-style="light">
+            <img src="assets/images/lifely-hero-bg.jpg" alt="">
+            <div class="lifely-hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-article text-center text-white">
+                                <h5>LIFELY</h5>
+                                <h3 class="fs-xl-7xl">QUICK, CLICK, INSURE OUR HUMANITY</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 02 Challenge Section Area -->
+        <section class="challenge-area" data-style="light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 bg-light">
+                        <div class="challenge-area-heading h-100 d-flex align-items-center justify-content-center py-5">
+                            <h2 class="fs-lg-6xl fw-semibold ff-secondary text-muted ls-sm text-uppercase">The Challenge
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="challenge-area-content card-body py-lg-7 px-lg-5 text-muted">
+                            <p>As Prudential’s traditional core audience ages out of their products and services, the
+                                company realized that they needed to reinvent even their most established offerings. The
+                                millennial audience in particular is now a key target for all financial services
+                                companies, and the broader category is being continuously disrupted by fintech startups.
+                                So Prudential developed a new life insurance offering that targets this digitally-native
+                                audience.</p>
+                            <p>They had a great product idea, but nothing else. So Six+One started with considerable
+                                research, both within Prudential and among consumers, to understand why this offering
+                                was not only exciting, but essential to a young family. Coming out of this, we developed
+                                a brand name that would resonate with our audience and feel more modern than the
+                                perception of the parent company. We branded it “Lifely”, and then we were off to the
+                                races.</p>
+                            <h6 class="fw-bold mt-5">ROLE: FEATURED, BRANDING, CAMPAIGNS, WEBSITES, CONTENT</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 04 Branding & Identity  Area -->
+        <section class="branding-area py-5 py-lg-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-article">
+                            <h2 class="fs-lg-7xl fw-semibold text-primary ff-secondary" data-aos="fade-up"
+                                data-aos-delay="100">BRANDING <br />& IDENTITY</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="branding-area-content">
+                            <p>Once we had a more modern name, we developed brand guidelines to ensure that Lifely
+                                looked, sounded, and felt different from the staid insurance brands that consumers are
+                                used to. From the font choice, to the color palette, to the photo shoot, we gave the
+                                brand a personality unto itself. And we brought everything together with the line,
+                                “Insure our Humanity”, to reflect the value system that we had created. Namely, that
+                                life insurance is not only important for your young family, but it helps protect the
+                                community around you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 05 Lifely Image Section Area -->
+        <section class="lifely-images-area pt-6" style="background-image: url(assets/images/lifely/blue_square.jpg)"
+            data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/lifely/brandDetails_01.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/images/lifely/brandDetails_02.png" alt="">
+                    </div>
+                    <div class="col-lg-12">
+                        <img src="assets/images/lifely/brandDetails_03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop Image -->
+            <img src="assets/images/lifely/desktop.jpg" alt="">
+        </section>
+        <section class="video-cover position-relative" data-style="light">
+            <!-- Videos -->
+            <iframe src="https://player.vimeo.com/video/236162064?title=0&byline=0&portrait=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </section>
+
+
+
+
+
+        <!--**|| 06 Online Videos  Area -->
+        <section class="branding-area py-5 py-lg-6" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-article">
+                            <h2 class="fs-lg-7xl fw-semibold text-primary ff-secondary" data-aos="fade-up"
+                                data-aos-delay="100">ONLINE <br />VIDEOS</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="branding-area-content">
+                            <p>With a modern identity secured, we developed a multi-dimensional communications campaign
+                                to generate awareness of this offering. Based on not only life stages, but topics that
+                                are relevant to our audience, we launched a digital video campaign to draw people to the
+                                website so that they can learn why Lifely is critical in protecting their family.</p>
+                            <p>The insight that we focused on for the campaign is the idea that everyone wants their
+                                presence to be felt within their family, and through Lifely you can ensure that still
+                                happens even if you’re not physically there. In line with our ethos and branding, Lifely
+                                is putting a positive spin on this conversation to open millennial’s eyes to the ease of
+                                insuring their humanity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--**|| 06 Online Videos  Area -->
+        <section class="branding-area pt-5 pt-lg-6" data-style="dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-article">
+                            <h2 class="fs-lg-7xl fw-semibold text-primary ff-secondary" data-aos="fade-up"
+                                data-aos-delay="100">CREATING A <br class="d-none d-lg-block"> TRULY DIGITAL <br
+                                    class="d-none d-lg-block">EXPERIENCE</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="branding-area-content">
+                            <p>Since Lifely was being positioned as quick, simple, and life changing, everything from
+                                the site experience through to the content they served needed to reflect this ethos. So
+                                we created a customizable experience so the right information gets to the right people,
+                                rather than a generic one-size-fits-all approach. After users learn what Lifely is, they
+                                were invited to fill in a few key fields.</p>
+                            <p>From there, we delivered a custom overview of the life insurance space for people their
+                                age, and how much they’d need to cover their family after their gone. And we knew
+                                educating people on life insurance can be a daunting task. So immediately after the user
+                                filled out the profile, we delivered everything they needed to know about Lifely Term,
+                                specifically tailored to where they are in life. Before the user rolled over the box
+                                they only saw the question, and when they rolled over, they saw quick, simple answers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branding-home-image-area">
+                <div class="image-cover">
+                    <img src="assets/images/lifely/homepage_a.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark2" data-style="light">
+            <div class="branding-home-image-area">
+                <div class="image-cover">
+                    <img src="assets/images/lifely/homepage_b.jpg" alt="">
+                    <img src="assets/images/lifely/homepage_c.jpg" alt="">
+                    <img src="assets/images/lifely/homepage_d.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!--**|| 04 Branding & Identity  Area -->
+        <!--**|| 06 Online Videos  Area -->
+        <section class="branding-area">
+            <div class="branding-home-image-area">
+                <div class="image-cover">
+                    <img src="assets/images/lifely/homepage_e.jpg" alt="">
+                </div>
+            </div>
+            <div class="py-5 py-lg-7">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="section-article">
+                                <h2 class="fs-lg-7xl fw-semibold text-primary ff-secondary" data-aos="fade-up"
+                                    data-aos-delay="100">ANIMATED <br class="d-none d-lg-block">BANNERS</h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="branding-area-content">
+                                <p>Continuing with the positioning of being quick, simple and life changing, Six+One
+                                    created a series of animated banners that reinforced the idea that your family can
+                                    still be protected even if you’re not physically there. A playful illustration style
+                                    kept the mood light even though the subject matter is serious.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Scroll-top -->
+    <button class="scroll-top-btn" data-target="html">
+        <img src="assets/images/backtotop.png" alt="">
+    </button>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <!-- Footer Logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo text-center text-md-start">
+                        <div
+                            class="logo-brand d-flex align-items-center justify-content-center justify-content-md-start">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo-white.png" alt="">
+                            </div>
+                            <div class="vr bg-white mx-3 opacity-100"></div>
+                            <div class="logo">
+                                <h6 class="mb-0 fs-sm fw-light">Doing Good</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyright -->
+                <div class="col-md-6">
+                    <div class="footer-copyright text-center text-md-end">
+                        <ul class="list-inline list-social">
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mb-0 fs-xs">Ⓒ 2022 Speakerhead Media Group, LLC All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Plugin Js -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -12282,6 +12282,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: var(--heading-fs, 5.4rem) !important;
 }
 
+.fs-7xl {
+  font-size: var(--heading-fs, 8.375rem) !important;
+}
+
 @media (min-width: 576px) {
   .fs-sm-xs {
     font-size: var(--heading-fs, 12px) !important;
@@ -12321,6 +12325,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
   .fs-sm-6xl {
     font-size: var(--heading-fs, 5.4rem) !important;
+  }
+
+  .fs-sm-7xl {
+    font-size: var(--heading-fs, 8.375rem) !important;
   }
 }
 @media (min-width: 768px) {
@@ -12363,6 +12371,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   .fs-md-6xl {
     font-size: var(--heading-fs, 5.4rem) !important;
   }
+
+  .fs-md-7xl {
+    font-size: var(--heading-fs, 8.375rem) !important;
+  }
 }
 @media (min-width: 992px) {
   .fs-lg-xs {
@@ -12403,6 +12415,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
   .fs-lg-6xl {
     font-size: var(--heading-fs, 5.4rem) !important;
+  }
+
+  .fs-lg-7xl {
+    font-size: var(--heading-fs, 8.375rem) !important;
   }
 }
 @media (min-width: 1200px) {
@@ -12445,6 +12461,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   .fs-xl-6xl {
     font-size: var(--heading-fs, 5.4rem) !important;
   }
+
+  .fs-xl-7xl {
+    font-size: var(--heading-fs, 8.375rem) !important;
+  }
 }
 @media (min-width: 1400px) {
   .fs-xxl-xs {
@@ -12485,6 +12505,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
   .fs-xxl-6xl {
     font-size: var(--heading-fs, 5.4rem) !important;
+  }
+
+  .fs-xxl-7xl {
+    font-size: var(--heading-fs, 8.375rem) !important;
   }
 }
 /* Section Title */
@@ -13291,6 +13315,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     background-size: cover;
     background-position: bottom center;
   }
+}
+
+.lifely-hero-content {
+  position: absolute;
+  top: var(--lifely-hero-content-top, 20%);
+  z-index: 9;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 1400px) {
+  .lifely-hero-content {
+    --lifely-hero-content-top: 10vh;
+  }
+}
+
+.lifely-images-area {
+  position: relative;
+  background-color: #d9e5e8;
+  background-repeat: repeat-x;
+  background-size: 50% auto;
+}
+
+.branding-home-image-area .image-cover {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.bg-dark2 {
+  background-color: #2a2a2a !important;
 }
 
 /*# sourceMappingURL=main.css.map */

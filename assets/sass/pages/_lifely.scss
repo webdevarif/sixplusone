@@ -1,0 +1,32 @@
+.lifely-hero{
+
+
+    &-content{
+        position: absolute;
+        top: var(--lifely-hero-content-top, 20%);
+        z-index: 9;
+        left: 0;
+        right: 0;
+        @include media-breakpoint-up(xxl){
+            --lifely-hero-content-top: 10vh;
+        }
+    }
+}
+
+.lifely-images-area{
+    position: relative;
+    background-color: #d9e5e8;
+    background-repeat: repeat-x;
+    background-size: 50% auto;
+}
+
+.branding-home-image-area{
+    .image-cover{
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+    }
+}
+.bg-dark2{
+    background-color: #2a2a2a !important;
+}
